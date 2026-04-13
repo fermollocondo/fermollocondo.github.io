@@ -1,7 +1,7 @@
 import { Roboto } from 'next/font/google';
 import './globals.css';
 // Importamos la Navbar (asegúrate de que la carpeta y el archivo existan)
-import Navbar from '../components/Navbar/Navbar';
+import Navbar from '../components/Navbar';
 
 const roboto = Roboto({
   weight: ['400', '700'],
