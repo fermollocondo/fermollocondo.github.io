@@ -10,8 +10,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
-      {/* Usamos next/font para Inter (cuerpo) y Playfair Display (display headings) */}
-      <body className={`${inter.className} ${playfair.className} antialiased tracking-tight bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 transition-colors duration-300`}>
+      {/* Tom Weightman style: Inter, clean, muted colors, slight tracking-tight */}
+      <body className={`${inter.className} antialiased tracking-tight text-[#333333] dark:text-[#E0E0E0] bg-[#fafafa] dark:bg-[#111111] transition-colors duration-300`}>
         <Navbar />
         <main className="min-h-screen">
           {children}

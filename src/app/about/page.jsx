@@ -1,4 +1,5 @@
 import Image from "next/image";
+import perfilImg from "../../assets/perfil.jpg";
 
 export const metadata = {
   title: 'Fer Mollocondo — About',
@@ -22,18 +23,20 @@ export default function About() {
           
           {/* COLUMNA IZQUIERDA: EL RETRATO (Responsiveness & Dark Mode) */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="relative aspect-[4/5] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 rounded-sm bg-zinc-200 dark:bg-zinc-800">
-              <Image 
-                src="/images/perfil.jpg" 
+            {/* Ajusté el background para la foto de fondo naranja; usé aspect-[4/3] que le queda mejor a una foto apaisada. */}
+            <div className="relative aspect-[4/3] md:aspect-[4/5] overflow-hidden rounded-sm bg-[#FF4500]/5 group">
+              <Image
+                src={perfilImg}
                 alt="Fernanda Mollocondo"
-                fill
-                className="object-cover"
+                width={800}
+                height={1000}
+                className="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-1000 ease-in-out cursor-pointer"
                 priority
               />
             </div>
             <div className="flex justify-between text-[9px] font-bold uppercase tracking-widest text-zinc-400">
               <span>Portrait 001</span>
-              <span>Salt Lake City, UT</span>
+              <span>American Fork, UT</span>
             </div>
           </div>
 
