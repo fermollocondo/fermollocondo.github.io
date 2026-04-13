@@ -1,24 +1,21 @@
-import { Roboto } from 'next/font/google';
 import './globals.css';
-// Importamos la Navbar (asegúrate de que la carpeta y el archivo existan)
 import Navbar from '../components/Navbar';
+import { inter, playfair } from '../lib/fonts';
 
-const roboto = Roboto({
-  weight: ['400', '700'],
-  style: ['normal', 'italic'],
-  subsets: ['latin'],
-  display: 'swap',
-});
+export const metadata = {
+  title: 'Fernanda Mollocondo | Software Engineer',
+  description: 'Minimalist portfolio focused on Software Engineering and Philosophy.',
+}
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={roboto.className}>
-        {/* La Navbar se coloca aquí para que sea global */}
+    <html lang="en" className="scroll-smooth">
+      {/* Usamos next/font para Inter (cuerpo) y Playfair Display (display headings) */}
+      <body className={`${inter.className} ${playfair.className} antialiased tracking-tight bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 transition-colors duration-300`}>
         <Navbar />
-        
-        {/* El contenido de cada página se renderiza aquí */}
-        {children}
+        <main className="min-h-screen">
+          {children}
+        </main>
       </body>
     </html>
   );

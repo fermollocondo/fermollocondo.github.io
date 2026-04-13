@@ -1,3 +1,79 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Esto ayudará a que los botones se vean limpios de inmediato */
+@layer base {
+  button {
+    @apply transition-all duration-300;
+  }
+}
+
+/* Plain-CSS equivalents to avoid @apply lint warnings */
+.container {
+  max-width: 72rem; /* 1152px */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem; /* px-6 */
+  padding-right: 1.5rem;
+}
+
+.hero {
+  padding-top: 6rem; /* py-24 */
+  padding-bottom: 6rem;
+}
+
+.about-grid {
+  gap: 2rem;
+}
+
+.skills-grid {
+  gap: 2rem;
+}
+
+.project-card {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(226,228,231,1); /* tailwind zinc-200 */
+  background: transparent;
+}
+
+.section-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(113,113,122,1); /* zinc-500 */
+}
+
+.project-num {
+  font-size: 0.75rem;
+  color: rgba(148,163,184,1); /* zinc-400 */
+}
+
+.scroll-indicator {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+  border: 2px solid rgba(226,228,231,1);
+}
+
+.font-display {
+  /* next/font will handle the Playfair font; fallback here */
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Small utilities for fades */
+.fade-in {
+  animation: fadeIn 700ms ease both;
+}
+
+.fade-in-delayed {
+  animation: fadeIn 900ms ease both 200ms;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+

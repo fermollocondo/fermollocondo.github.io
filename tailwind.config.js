@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  // 1. IMPORTANTE: Agregamos darkMode 'class' para que Tailwind 
-  // escuche cuando cambias la clase en el body (como en tu reto anterior).
   darkMode: 'class', 
-  
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -11,17 +8,20 @@ module.exports = {
   ],
   theme: {
     extend: {
-      // 2. Aquí puedes añadir colores específicos del Figma para no usar genéricos
       colors: {
+        // Configuramos tus colores reales de marca
         brand: {
-          primary: '#491eff', // Ejemplo: el color de tus botones previos
-          dark: '#050617',
+          orange: '#FF4500', // Tu Signature Orange
+          black: '#050505',  // Un negro más profundo y elegante
         },
+        // Usamos la paleta Zinc (gris neutro) como base
+        zinc: {
+          950: '#09090b',
+        }
       },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      letterSpacing: {
+        'tightest': '-.075em',
+        'widest': '.25em', // Para ese look de títulos pequeños y separados
       },
     },
   },
