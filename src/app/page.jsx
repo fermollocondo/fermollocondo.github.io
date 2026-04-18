@@ -92,7 +92,7 @@ export default function Home() {
       <footer id="contact" className="py-32 border-t border-zinc-100 dark:border-zinc-900">
         <div className="container max-w-4xl mx-auto px-6 space-y-8">
           <h2 className="text-3xl md:text-5xl font-light tracking-tighter text-zinc-900 dark:text-zinc-100 text-center">
-            Let's build something <span className="italic serif">meaningful</span>.
+            Let&apos;s build something <span className="italic serif">meaningful</span>.
           </h2>
           <div className="text-center">
             <a 
