@@ -92,13 +92,10 @@ export default function About() {
               </h2>
               <div className="prose prose-zinc dark:prose-invert max-w-none text-zinc-600 dark:text-zinc-400 font-light leading-relaxed mb-12">
                 <p>
-                  As an Interaction Designer at the Swiss design agency Ginetta, based in Zurich, I strive to design clear, highly functional, and refined products across various industries—from banking and healthcare to mobility and B2B software solutions. Over the past four years in Switzerland, I&apos;ve had the opportunity to design the future core banking system for Valiant, and craft complex, large-scale systems for leading companies like Swisscom, SBB, and Straumann, translating business requirements into solutions that benefit both people and organizations.
+                  I’m someone who enjoys learning, growing, and connecting with others. Speaking multiple languages has shaped the way I see the world and made me naturally curious and open-minded. I like to stay organized, challenge myself, and approach things with intention.
                 </p>
                 <p className="mt-6">
-                  Coming from a background as a full-stack developer in Costa Rica, and now a product designer, my work combines analytical thinking and technical understanding with a strong sensitivity for visual clarity. I love being involved right from the beginning, navigating ambiguity, questioning assumptions, bringing ideas to life, testing them, and working closely with clients to guide products toward excellence. The balance of solving complex problems in simple, structured ways feels just right. Whether defining the core premise of a product or refining the details of UI interactions, I prioritize precision, simplicity, and meaningful communication. My aim is always creating work that feels thoughtful and human.
-                </p>
-                <p className="mt-6">
-                  When I&apos;m not shaping pixels, you&apos;ll likely find me capturing quiet street moments with my camera, finding poetry in everyday scenes, exploring interior and furniture design, making specialty coffee at home, sketching ideas on a quiet day, running outside, playing tennis with friends, or having long, deep conversations with a good pint of beer.
+                  I value meaningful experiences, personal growth, and clear communication. Whether I’m working on a goal or getting to know someone new, I try to bring authenticity, consistency, and a positive mindset into everything I do.
                 </p>
               </div>
 
