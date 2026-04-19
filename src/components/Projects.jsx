@@ -11,12 +11,10 @@ export default function Projects({ items = [] }) {
             <div key={i} className="flex flex-col md:flex-row gap-8 items-start group">
               <div className="md:w-1/3 shrink-0">
                 <div className="aspect-[4/3] bg-black/5 dark:bg-white/5 relative overflow-hidden rounded-sm">
-                  {/* Si tienes imágenes por proyecto (ej: p.image), usa next/image. 
-                      Para ahora, usamos un placeholder minimalista griseado. */}
-                  {i === 0 ? (
+                  {p.image ? (
                     <Image 
-                      src="/images/perfil.jpg" 
-                      alt="Project" 
+                      src={p.image} 
+                      alt={p.title || "Project"} 
                       width={600} 
                       height={400} 
                       className="object-cover w-full h-full grayscale opacity-70 group-hover:opacity-100 transition-opacity duration-300"
